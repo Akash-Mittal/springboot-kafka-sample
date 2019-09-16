@@ -13,7 +13,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 
 @Configuration
-public class ProducerConfigs {
+public class SenderConfig {
 
     @Value("${kafka.bootstrap-servers}")
     private String bootstrapServers;
@@ -38,7 +38,7 @@ public class ProducerConfigs {
     }
 
     @Bean
-    public Producer sender() {
-        return new Producer();
+    public SenderService sender() {
+        return new SenderService();
     }
 }

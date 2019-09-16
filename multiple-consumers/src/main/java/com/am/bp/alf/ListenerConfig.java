@@ -15,7 +15,7 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 
 @Configuration
 @EnableKafka
-public class ConsumerConfigs {
+public class ListenerConfig {
 
     @Value("${kafka.bootstrap-servers}")
     private String bootstrapServers;
@@ -46,7 +46,7 @@ public class ConsumerConfigs {
     }
 
     @Bean
-    public Consumer receiver() {
-        return new Consumer();
+    public Listener receiver() {
+        return new Listener();
     }
 }
