@@ -9,3 +9,9 @@ This is a parent repository for All Spring Boot Based Kafka Application
 * How to Figure out what is the optimal number of Batch size i put for Kafka consumer `performance`?
 * If An Kafka App is Consuming in Batch Mode what could be the optimum settings `kafka-batch-consumer` ?
 
+## Scenario (This will be considered thourgh out whole `submodules`)
+
+* A logAggregatorApp (ELK Stack) send the user's 
+  * `BrowsingActivityLogs` and activity on a `KafkaTopic`.
+* The number of concurrent users is between 100.
+* logAggregatorApp feeds to reccommendationEngine(data used for AI and Monitoring) which consumes data in certain format.
