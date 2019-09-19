@@ -8,12 +8,14 @@ This is a parent repository for All Spring Boot Based Kafka Application
 * What about Message Duplication - If my application is running on Multiple instances then what `Duplicate Messages`?
 * How to Figure out what is the optimal number of Batch size i put for Kafka consumer `performance`?
 * How to `serialize` and `deserialize` complex Kafka Json messages ?
+* If An Kafka App is Consuming in Batch Mode what could be the optimum settings `kafka-batch-consumer` ?
+* A `KAFKAJMXUI`  Which Can show or have an interface like ActiveMQs with `ProducersAndConsumers` ?
+* What happens - a NullMessgae is sent to `KafkaTopic` or Even Better a `MillionNullMessages` pushed on `KafkaTopic`. 
 
 
+## Scenario (This will be considered thourgh out whole `submodules`)
 
-A log Aggregator App send the user browsing logs and activity on a kafka topic.
-The number of concurrent users is between 10000 - 20000.
-The logs need to fed to the reccommendation engine(An AI) which consumes data in certain format.
-
-Kafka Data Publisher - Produces a Json Message.
-
+* A logAggregatorApp (ELK Stack) send the user's 
+  * `BrowsingActivityLogs` and activity on a `KafkaTopic`.
+* The number of concurrent users is between 100.
+* logAggregatorApp feeds to reccommendationEngine(data used for AI and Monitoring) which consumes data in certain form
