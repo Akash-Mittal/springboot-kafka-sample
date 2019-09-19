@@ -1,4 +1,4 @@
-package com.am.bp.alf;
+package com.am.bp.alf.innovations;
 
 import java.io.Serializable;
 import java.util.Map;

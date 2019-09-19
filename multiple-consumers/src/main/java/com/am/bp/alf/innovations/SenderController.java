@@ -1,4 +1,4 @@
-package com.am.bp.alf;
+package com.am.bp.alf.innovations;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

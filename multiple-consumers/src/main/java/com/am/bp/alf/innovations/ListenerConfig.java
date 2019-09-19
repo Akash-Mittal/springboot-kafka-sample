@@ -1,4 +1,4 @@
-package com.am.bp.alf;
+package com.am.bp.alf.innovations;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class ListenerConfig {
     }
 
     @Bean
-    public Listener receiver() {
-        return new Listener();
+    public ListenerService receiver() {
+        return new ListenerService();
     }
 }
