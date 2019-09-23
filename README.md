@@ -12,10 +12,12 @@ This is a parent repository for All Spring Boot Based Kafka Application
 * A `KAFKAJMXUI`  Which Can show or have an interface like ActiveMQs with `ProducersAndConsumers` ?
 * What happens - a NullMessgae is sent to `KafkaTopic` or Even Better a `MillionNullMessages` pushed on `KafkaTopic`. 
 
+Message Sequencing - If customer events are processed in parallel how will the application make sure that they are in right sequence, however its a great opportunity to explore this use case.
+
 
 ## Scenario (This will be considered thourgh out whole `submodules`)
 
 * A logAggregatorApp (ELK Stack) send the user's 
   * `BrowsingActivityLogs` and activity on a `KafkaTopic`.
 * The number of concurrent users is between 100.
-* logAggregatorApp feeds to reccommendationEngine(data used for AI and Monitoring) which consumes data in certain form
+* logAggregatorApp feeds to reccommendationEngine(data used for AI and Monitoring) which consumes data in certain form.
