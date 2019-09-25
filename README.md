@@ -11,8 +11,9 @@ This is a parent repository for All Spring Boot Based Kafka Application
 * `serializeAnddeserialize` Complex Kafka Json messages.
 * `kafkaPerformance` settings `InfraLevel` and `ApplicationLevel`.
 	* `MillionNullMessages` .
-	* `OptimalBatchSize` .
-* A `kafkaJMXUI`  Which Can show or have an interface like ActiveMQs with `ProducersAndConsumers` ?
+	* `optimalBatchSize` .
+* A `kafkaJMXUI`  Which Can show or have an interface like ActiveMQs with `ProducersAndConsumers`
+	* Possible (Jolokia)[https://jolokia.org/]
 
 
 ## Scenario (This will be considered through out whole `submodules`)
