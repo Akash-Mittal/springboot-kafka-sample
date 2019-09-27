@@ -28,16 +28,4 @@ public class ListenerService {
         LOGGER.debug("Debug: BATCH_LISTENER_ID {} topics {} ", BATCH_LISTENER_ID_1, KAFKA_TOPIC_PROPS_KEY);
     }
 
-    @KafkaListener(id = BATCH_LISTENER_ID_2, topics = KAFKA_TOPIC_PROPS_KEY)
-    public void receive2(List<String> data, @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
-            @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
-        LOGGER.info("start of batch receive");
-        for (int i = 0; i < data.size(); i++) {
-            LOGGER.info("received message='{}' with partition-offset='{}'", data.get(i),
-                    partitions.get(i) + "-" + offsets.get(i));
-
-        }
-        LOGGER.debug("Debug: BATCH_LISTENER_ID {} topics {} ", BATCH_LISTENER_ID_1, KAFKA_TOPIC_PROPS_KEY);
-    }
-
 }
