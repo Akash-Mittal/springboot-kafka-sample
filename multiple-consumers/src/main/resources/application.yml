@@ -1,0 +1,27 @@
+bluejean:
+  app:
+    name: bj
+bj: 
+  app:
+    reccommendationEngine:
+      name: re
+  
+spring:
+  profiles:
+    active: "default"
+---
+
+spring:
+  profiles: default
+kafka:
+  bootstrap-servers: localhost:9092
+  topic:
+    batch: default.re.user.activity.logs.t
+---
+
+spring:
+  profiles: test-junit
+kafka:
+  bootstrap-servers: ${spring.embedded.kafka.brokers}
+  topic:
+    batch: batch.t

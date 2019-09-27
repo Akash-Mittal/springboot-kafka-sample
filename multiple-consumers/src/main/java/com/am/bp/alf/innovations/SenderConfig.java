@@ -38,7 +38,7 @@ public class SenderConfig {
     }
 
     @Bean
-    public SenderServiceTest sender() {
-        return new SenderServiceTest();
+    public SenderService sender() {
+        return new SenderService();
     }
 }

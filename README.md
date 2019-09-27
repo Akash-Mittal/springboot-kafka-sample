@@ -42,7 +42,13 @@ BlueJean is an Ecommerce Startup using followin `messageDrivenArchitecture`
 * `logAggregatorApp` feeds to `reccommendationEngine`(data used for AI and Monitoring) via `webUserActivityLogskafkaTopic1`
 * The number of concurrent users is <>.
 
+```sequence
+logAggregatorApp->reccommendationEngine: webUserActivityLogskafkaTopic1
+Note right of reccommendationEngine: KafkaTopic
+reccommendationEngine-->promoService: User Preferences..
+reccommendationEngine-->reportingEngine: Updates..
 
+```
 ### Other Learnings
 * Junit Test Data Slicing in MicroServiceArchitecture using Spring Boot.
 * Junit Testing With `EmbeddedKafka` and `EmbeddedZooKeeper`.
