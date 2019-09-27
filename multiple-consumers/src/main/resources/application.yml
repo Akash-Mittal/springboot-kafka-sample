@@ -16,12 +16,12 @@ spring:
 kafka:
   bootstrap-servers: localhost:9092
   topic:
-    batch: default.re.user.activity.logs.t
+    batch: default.user.activity.logs.t
 ---
 
 spring:
-  profiles: test-junit
+  profiles: junittest
 kafka:
   bootstrap-servers: ${spring.embedded.kafka.brokers}
   topic:
-    batch: batch.t
+    batch: junittest.user.activity.logs.t
