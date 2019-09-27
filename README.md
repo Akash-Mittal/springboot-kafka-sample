@@ -20,6 +20,8 @@ Kafka as in a `messageDrivenArchitecture`brings both speed and reliability
 		* `KafkaConsumer` when to do batchin and not.
 * A `kafkaJMXUI`  Which Can show or have an interface like ActiveMQs with `ProducersAndConsumers`
 	* Possible (Jolokia)[https://jolokia.org/]
+* A `bigKafkaMessage` - What are the best practises and pitfalls.
+	
 
 
 # Kafka-Multiple-Consumers
