@@ -21,6 +21,7 @@ Kafka as in a `messageDrivenArchitecture`brings both speed and reliability
 * A `kafkaJMXUI`  Which Can show or have an interface like ActiveMQs with `ProducersAndConsumers`
 	* Possible (Jolokia)[https://jolokia.org/]
 * A `bigKafkaMessage` - What are the best practises and pitfalls.
+* A Recovery of a Kafka Message aka Usage of RecoverHandler.
 	
 
 
